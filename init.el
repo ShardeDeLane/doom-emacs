@@ -32,6 +32,13 @@
 ;; enabling `gcmh-mode'. Not resetting it will cause stuttering/freezes.
 (setq gc-cons-threshold most-positive-fixnum)
 
+
+;;; I prefer cmd key for meta
+(setq mac-option-key-is-meta nil
+      mac-command-key-is-meta t
+      mac-command-modifier 'meta
+      mac-option-modifier 'none)
+
 ;; In noninteractive sessions, prioritize non-byte-compiled source files to
 ;; prevent the use of stale byte-code. Otherwise, it saves us a little IO time
 ;; to skip the mtime checks on every *.elc file.
